@@ -31,7 +31,7 @@ AeroControl is a production-ready Python application that transforms hand gestur
 ### Quick Install
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/aerocontrol.git
+git clone https://github.com/Satishhhh989/aerocontrol.git
 cd aerocontrol
 
 # Run setup script
@@ -293,7 +293,7 @@ A: Desktop switching may have limited support on Wayland. Mouse control works vi
 A: Yes, but cursor accuracy will be reduced. Calibration is highly recommended.
 
 **Q: How much CPU does it use?**  
-A: Approximately 5-15% on a modern quad-core CPU at 30 FPS.
+A: Approximately 5-15% on a modern quad-core CPU at 30 FPS.(can be run in older linux computers easily and smoothly)
 
 **Q: Is my camera data sent anywhere?**  
 A: No. All processing is local. No network calls are made.
