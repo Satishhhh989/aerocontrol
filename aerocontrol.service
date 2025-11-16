@@ -1,0 +1,21 @@
+[Unit]
+Description=AeroControl Hand Gesture Mouse Control
+After=graphical.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 %h/aerocontrol/main.py --headless
+Restart=on-failure
+RestartSec=5s
+
+# Security hardening
+PrivateTmp=yes
+NoNewPrivileges=yes
+
+# Allow access to video devices and input
+DeviceAllow=/dev/video0 rw
+DeviceAllow=/dev/uinput rw
+
+[Install]
+WantedBy=default.target
+EOF

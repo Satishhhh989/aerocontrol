@@ -1,0 +1,42 @@
+# AeroControl Configuration
+
+camera:
+  width: 640
+  height: 480
+  fps: 30
+
+smoother:
+  # Base smoothing factor (0-1, lower = more smoothing)
+  alpha_base: 0.3
+  # Minimum smoothing (when hand is far)
+  alpha_min: 0.1
+  # Maximum smoothing (when hand is close)
+  alpha_max: 0.7
+  # How strongly distance affects smoothing
+  adaptation_factor: 0.5
+  # Reference hand size in pixels
+  reference_hand_size: 150.0
+
+velocity:
+  # Power curve exponent for velocity mapping
+  gamma: 0.6
+  # Gain factor for cursor speed
+  gain: 0.0025
+  # Minimum velocity threshold (px/s)
+  min_velocity: 10
+
+gestures:
+  # Distance threshold for pinch detection (pixels)
+  pinch_threshold: 40
+  # Debounce time for pinch gestures (ms)
+  pinch_debounce_ms: 200
+  
+  # Minimum vertical distance for swipe detection (pixels)
+  swipe_min_distance: 100
+  # Minimum velocity for swipe detection (px/s)
+  swipe_min_velocity: 200
+  # Debounce time for swipe gestures (ms)
+  swipe_debounce_ms: 500
+  
+  # Distance threshold for zoom gesture (pixels)
+  zoom_threshold: 200
